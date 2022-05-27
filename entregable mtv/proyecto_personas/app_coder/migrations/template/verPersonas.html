@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Personas</title>
+</head>
+<body>
+
+    
+<center>
+<table class="default" border="2">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>DNI</th>
+        <th>Nacimiento</th>
+    </tr>
+    {%for x in Personas%}
+    <tr>
+        <td>{{x.nombre}}</td>
+        <td>{{x.apellido}}</td>
+        <td>{{x.edad}}</td>
+        <td>{{x.dni}}</td>
+        <td>{{x.nacimiento}}</td>
+    </tr>
+    {% endfor %}
+</table></center>
+
+</body>
+</html>
